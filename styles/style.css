@@ -1,1 +1,62 @@
-/* место для вашего кода */
+/* Хедер */
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+}
+
+.header__logo {
+    width: 148px;
+    height: 105px;
+}
+
+.header__links-list {
+    display: flex;
+    gap: 30px;
+    list-style: circle;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.address {
+    justify-self: end;
+    max-width: 240px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__link {
+    text-decoration: underline;
+}
+
+.header__link_active {
+    text-decoration: unset;
+}
+
+/* Основной контент */
+
+.cover {
+    position: relative;
+    background-image: url('../images/cover.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    min-height: 757px;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+.cover__title {
+    
+}
+
+.cover__description-text {
+    word-spacing: 30px;
+}
+
+.overlay {
+    position: absolute;
+}
