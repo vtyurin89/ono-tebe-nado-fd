@@ -297,8 +297,7 @@ ul.lots__card-list li {
     height: 48px;
 }
 
-.footer__social-list-item,
-.footer__menu-list-item {
+.footer__social-list-item, .footer__menu-list-item {
     list-style: none;
 }
 
