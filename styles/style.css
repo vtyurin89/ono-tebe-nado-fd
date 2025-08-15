@@ -1,8 +1,8 @@
 button {
-  all: unset;
-  cursor: pointer;
-  display: inline-block;
-  -webkit-tap-highlight-color: transparent;
+    all: unset;
+    cursor: pointer;
+    display: inline-block;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .padding-wrapper {
@@ -30,7 +30,7 @@ button {
 }
 
 .header__links-list-item_no-bullit {
-  list-style: none;
+    list-style: none;
 }
 
 .address {
@@ -58,7 +58,7 @@ button {
     position: relative;
     background-image: url('../images/cover.jpg');
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     background-repeat: no-repeat;
     min-height: 757px;
     color: #FFF;
@@ -288,7 +288,8 @@ ul.lots__card-list li {
     height: 48px;
 }
 
-.footer__social-list-item, .footer__menu-list-item {
+.footer__social-list-item,
+.footer__menu-list-item {
     list-style: none;
 }
 
