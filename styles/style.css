@@ -69,28 +69,63 @@ button {
     color: #FFF;
     text-transform: uppercase;
     margin-bottom: 180px;
+    padding: 165px 50px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .cover__title {
+    height: 385px;
     font-size: 100px;
     line-height: 115px;
-    letter-spacing: 30%;
+    letter-spacing: calc(100px * 0.3);
     font-weight: 700;
     text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.aligned-text {
+    display: block;
+}
+
+.aligned-text_left {
+    text-align: left;
+}
+
+.aligned-text_center {
+    text-align: center;
+}
+
+.aligned-text_right {
+    text-align: right;
 }
 
 .cover__description {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 22px;
+    z-index: 2;
 }
 
 .cover__description-text {
-    word-spacing: 30px;
+    width: 637px;
+    word-spacing: 18px;
 }
 
 .overlay {
     position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.6;
+    z-index: 1;
 }
 
 button:focus {
@@ -100,6 +135,7 @@ button:focus {
 .bet-button {
     border: 1px solid #FFF;
     padding: 12px 32px;
+    font-size: 22px;
 }
 
 /* Карточки */
@@ -128,6 +164,7 @@ ul.lots__card-list li {
 
 .lots__card-list-item {
     height: 100%;
+    position: relative;
 }
 
 .card-link {
@@ -153,11 +190,13 @@ ul.lots__card-list li {
     font-size: 22px;
     text-transform: uppercase;
     line-height: 120%;
+    z-index: 2;
 }
 
 .card__text {
     font-size: 20px;
     line-height: 120%;
+    z-index: 2;
 }
 
 .card_type_film {
