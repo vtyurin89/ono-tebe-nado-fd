@@ -29,7 +29,7 @@ button {
     list-style: circle;
 }
 
-.header__links-list-item_no-bullit {
+.header__links-list-item:first-child {
     list-style: none;
 }
 
@@ -71,7 +71,6 @@ button {
 }
 
 .cover__title {
-    height: 385px;
     font-size: 100px;
     line-height: 115px;
     letter-spacing: calc(100px * 0.3);
@@ -97,6 +96,7 @@ button {
 
 .aligned-text_right {
     text-align: right;
+    margin-right: calc(-1 * 100px * 0.3);
 }
 
 .cover__description {
@@ -147,7 +147,7 @@ button:focus {
 ul.lots__card-list li {
     list-style: none;
     width: 334px;
-    height: 596px;
+    min-height: 596px;
 }
 
 .lots__card-list {
@@ -157,7 +157,6 @@ ul.lots__card-list li {
 }
 
 .lots__card-list-item {
-    height: 100%;
     position: relative;
 }
 
@@ -295,4 +294,32 @@ ul.lots__card-list li {
 
 .no-decoration {
     text-decoration: none;
+}
+
+
+
+
+
+
+
+.layout-checker {
+  position: relative; 
+}
+
+.layout-checker__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.7; 
+  pointer-events: none; 
+  z-index: 9999; 
+  mix-blend-mode: multiply; 
+  display: none; 
+}
+
+/* Класс для активации проверки */
+.layout-checker__overlay.active {
+  display: block;
 }
