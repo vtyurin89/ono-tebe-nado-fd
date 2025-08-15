@@ -10,8 +10,6 @@ button {
     padding-right: 24px;
 }
 
-/* Хедер */
-
 .header {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
@@ -56,9 +54,6 @@ button {
     text-decoration: unset;
 }
 
-/* Основной контент */
-
-/* Обложка */
 .cover {
     position: relative;
     background-image: url('../images/cover.jpg');
@@ -138,7 +133,6 @@ button:focus {
     font-size: 22px;
 }
 
-/* Карточки */
 .lots {
     margin-bottom: 120px;
 }
@@ -218,7 +212,6 @@ ul.lots__card-list li {
     font-size: 20px;
 }
 
-/* Об аукционе */
 .about {
     display: grid;
     grid-template-columns: 287px 1fr;
@@ -262,8 +255,6 @@ ul.lots__card-list li {
     line-height: 24px;
 }
 
-/* Футер */
-
 .footer {
     font-size: 18px;
     display: grid;
@@ -304,4 +295,3 @@ ul.lots__card-list li {
 .no-decoration {
     text-decoration: none;
 }
-
