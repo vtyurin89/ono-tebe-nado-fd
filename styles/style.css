@@ -79,6 +79,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 20px;
     z-index: 2;
 }
 
@@ -92,6 +93,7 @@ button {
 
 .aligned-text_center {
     text-align: center;
+    margin-right: calc(-1 * 100px * 0.3);
 }
 
 .aligned-text_right {
@@ -257,7 +259,7 @@ ul.lots__card-list li {
 .footer {
     font-size: 18px;
     display: grid;
-    grid-template-columns: 265px 164px 240px;
+    grid-template-columns: 1fr 164px 1fr;
     align-items: start;
     justify-content: space-between;
     padding: 0 50px 82px 50px;
@@ -265,6 +267,7 @@ ul.lots__card-list li {
 
 .footer__address {
     max-width: 265px;
+    justify-self: start;
 }
 
 .footer__menu-list {
@@ -277,9 +280,14 @@ ul.lots__card-list li {
     text-decoration: none;
 }
 
+.social-list-container {
+    justify-self: end;
+}
+
 .footer__social-list {
     display: flex;
     justify-content: space-between;
+    width: 240px;
 }
 
 .footer__social-icon {
@@ -294,32 +302,4 @@ ul.lots__card-list li {
 
 .no-decoration {
     text-decoration: none;
-}
-
-
-
-
-
-
-
-.layout-checker {
-  position: relative; 
-}
-
-.layout-checker__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  opacity: 0.7; 
-  pointer-events: none; 
-  z-index: 9999; 
-  mix-blend-mode: multiply; 
-  display: none; 
-}
-
-/* Класс для активации проверки */
-.layout-checker__overlay.active {
-  display: block;
 }
